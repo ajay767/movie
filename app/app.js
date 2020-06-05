@@ -9,7 +9,7 @@ document.querySelector('.search-btn').addEventListener('click', () => {
 
 function getMovieData(value) {
     setTimeout(() => {
-        fetch(`http://www.omdbapi.com/?s=${value}&apikey=bea7ac38`)
+        fetch(`https://www.omdbapi.com/?s=${value}&apikey=bea7ac38`)
             .then(Response => Response.json())
             .then(data => {
                 console.log(data.Search);
